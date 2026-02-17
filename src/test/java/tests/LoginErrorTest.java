@@ -8,6 +8,8 @@ import pages.HomePage;
 import pages.LoginPage;
 
 import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 @Listeners(ExtentTestNGListener.class)
 public class LoginErrorTest extends BaseTest {
@@ -20,8 +22,8 @@ public class LoginErrorTest extends BaseTest {
         String expected = "Please Enter Valid Mobile Number";
         String actual = login.getInvalidMobileError();
         Assert.assertEquals(actual, expected, "Error message should match");
-
-        File target = new File(System.getProperty("user.dir") + File.separator + "screenshots" + File.separator + "warningMessage.png");
+        String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+        File target = new File(System.getProperty("user.dir") + File.separator + "screenshots" + File.separator + "warningMessage"+timestamp+".png");
         login.captureWarningScreenshot(target);
     }
 }

@@ -7,6 +7,8 @@ import pages.BikesPage;
 import pages.HomePage;
 
 import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 @Listeners(ExtentTestNGListener.class)
@@ -29,8 +31,9 @@ public class IdentifyNewBikesTest extends BaseTest {
             System.out.println("Launch: " + r[2]);
             System.out.println("----------------------");
         }
+        String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
 
-        File target = new File(System.getProperty("user.dir") + File.separator + "screenshots" + File.separator + "upcomingbikes.png");
+        File target = new File(System.getProperty("user.dir") + File.separator + "screenshots" + File.separator + "upcomingbikes"+timestamp+".png");
         bikes.captureUpcomingBikesScreenshot(target);
     }
 }

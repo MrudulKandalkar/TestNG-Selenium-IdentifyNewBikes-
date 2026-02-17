@@ -8,6 +8,8 @@ import pages.UsedCarsPage;
 import utils.ExcelUtil;
 
 import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 @Listeners(ExtentTestNGListener.class)
@@ -26,6 +28,9 @@ public class BuyUsedCarInCityTest extends BaseTest {
         ExcelUtil.writeUsedCars("Chennai", models, excel);
 
         // Back to home (to stay consistent with your original flow)
+        String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+        File target = new File(System.getProperty("user.dir") + File.separator + "screenshots" + File.separator + "usedCarInCity"+timestamp+".png");
+        used.captureUsedCarInCityScreenshot(target);
         new HomePage().open();
     }
 }

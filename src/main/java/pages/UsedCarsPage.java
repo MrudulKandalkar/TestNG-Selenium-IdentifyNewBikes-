@@ -3,6 +3,9 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import utils.ScreenshotUtil;
+
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,5 +35,10 @@ public class UsedCarsPage extends BasePage {
             if (!text.isEmpty()) results.add(text);
         }
         return results;
+    }
+    public File captureUsedCarInCityScreenshot(File targetFile) {
+        WebElement el = find(modelLabels);
+        scrollIntoViewCenter(el);
+        return ScreenshotUtil.saveElementScreenshot(el, targetFile);
     }
 }

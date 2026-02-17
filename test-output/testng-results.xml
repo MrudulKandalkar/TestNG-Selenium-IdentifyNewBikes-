@@ -1,102 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-12T12:29:36 IST" name="Default suite" finished-at="2026-02-12T12:31:30 IST" duration-ms="114809">
+  <suite started-at="2026-02-17T09:34:37 IST" name="Default suite" finished-at="2026-02-17T09:35:39 IST" duration-ms="61787">
     <groups>
     </groups>
-    <test started-at="2026-02-12T12:29:36 IST" name="Default test" finished-at="2026-02-12T12:31:30 IST" duration-ms="114809">
+    <test started-at="2026-02-17T09:34:37 IST" name="Default test" finished-at="2026-02-17T09:35:39 IST" duration-ms="61787">
       <class name="tests.LoginErrorTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginErrorTest@4afcd809]" started-at="2026-02-12T12:29:36 IST" name="setUp" finished-at="2026-02-12T12:29:42 IST" duration-ms="6367" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginErrorTest@2d1ef81a]" started-at="2026-02-17T09:34:37 IST" name="setUp" finished-at="2026-02-17T09:34:43 IST" duration-ms="6113" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateLoginError()[pri:0, instance:tests.LoginErrorTest@4afcd809]" started-at="2026-02-12T12:29:42 IST" name="validateLoginError" description="Validate invalid mobile error and capture warning screenshot" finished-at="2026-02-12T12:29:53 IST" duration-ms="10484" status="PASS">
+        <test-method signature="validateLoginError()[pri:0, instance:tests.LoginErrorTest@2d1ef81a]" started-at="2026-02-17T09:34:43 IST" name="validateLoginError" description="Validate invalid mobile error and capture warning screenshot" finished-at="2026-02-17T09:34:49 IST" duration-ms="5274" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateLoginError -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginErrorTest@4afcd809]" started-at="2026-02-12T12:29:53 IST" name="tearDown" finished-at="2026-02-12T12:29:57 IST" duration-ms="4406" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginErrorTest@2d1ef81a]" started-at="2026-02-17T09:34:49 IST" name="tearDown" finished-at="2026-02-17T09:34:53 IST" duration-ms="4453" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.LoginErrorTest -->
       <class name="tests.BuyUsedCarInCityTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BuyUsedCarInCityTest@217ed35e]" started-at="2026-02-12T12:30:23 IST" name="setUp" finished-at="2026-02-12T12:30:27 IST" duration-ms="4172" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BuyUsedCarInCityTest@489115ef]" started-at="2026-02-17T09:35:10 IST" name="setUp" finished-at="2026-02-17T09:35:15 IST" duration-ms="4484" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="buyUsedCarChennai()[pri:0, instance:tests.BuyUsedCarInCityTest@217ed35e]" started-at="2026-02-12T12:30:27 IST" name="buyUsedCarChennai" description="Extract popular used car models in Chennai and write to Excel" finished-at="2026-02-12T12:31:25 IST" duration-ms="57298" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //li[contains(@class,'border-b py-3 lg:px-0 cursor-pointer')]//span[contains(@class,'text-black font-14')][normalize-space()='Chennai'] (tried for 15 second(s) with 500 milliseconds interval)
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.13'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 144.0.3719.115, fedcm:accounts: true, goog:processID: 29640, ms:edgeOptions: {debuggerAddress: localhost:63092}, msedge: {msedgedriverVersion: 144.0.3719.82 (f6f6e1fcd9e6..., userDataDir: C:\Users\2461951\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63092/devtoo..., se:cdpVersion: 144.0.3719.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 96d5850a7056d7a469535f101d737632]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //li[contains(@class,'border-b py-3 lg:px-0 cursor-pointer')]//span[contains(@class,'text-black font-14')][normalize-space()='Chennai'] (tried for 15 second(s) with 500 milliseconds interval)
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.13'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 144.0.3719.115, fedcm:accounts: true, goog:processID: 29640, ms:edgeOptions: {debuggerAddress: localhost:63092}, msedge: {msedgedriverVersion: 144.0.3719.82 (f6f6e1fcd9e6..., userDataDir: C:\Users\2461951\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63092/devtoo..., se:cdpVersion: 144.0.3719.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 96d5850a7056d7a469535f101d737632
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at pages.BasePage.find(BasePage.java:35)
-at pages.BasePage.scrollIntoViewCenter(BasePage.java:43)
-at pages.UsedCarsPage.selectChennai(UsedCarsPage.java:21)
-at tests.BuyUsedCarInCityTest.buyUsedCarChennai(BuyUsedCarInCityTest.java:19)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="buyUsedCarChennai()[pri:0, instance:tests.BuyUsedCarInCityTest@489115ef]" started-at="2026-02-17T09:35:15 IST" name="buyUsedCarChennai" description="Extract popular used car models in Chennai and write to Excel" finished-at="2026-02-17T09:35:33 IST" duration-ms="18265" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- buyUsedCarChennai -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BuyUsedCarInCityTest@217ed35e]" started-at="2026-02-12T12:31:25 IST" name="tearDown" finished-at="2026-02-12T12:31:30 IST" duration-ms="5274" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BuyUsedCarInCityTest@489115ef]" started-at="2026-02-17T09:35:33 IST" name="tearDown" finished-at="2026-02-17T09:35:39 IST" duration-ms="5606" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.BuyUsedCarInCityTest -->
       <class name="tests.IdentifyNewBikesTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.IdentifyNewBikesTest@682b2fa]" started-at="2026-02-12T12:29:57 IST" name="setUp" finished-at="2026-02-12T12:30:02 IST" duration-ms="5024" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.IdentifyNewBikesTest@15de0b3c]" started-at="2026-02-17T09:34:53 IST" name="setUp" finished-at="2026-02-17T09:34:58 IST" duration-ms="4160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="identifyNewBikes()[pri:0, instance:tests.IdentifyNewBikesTest@682b2fa]" started-at="2026-02-12T12:30:02 IST" name="identifyNewBikes" description="Identify upcoming Honda bikes under 4 Lakh and capture screenshot" finished-at="2026-02-12T12:30:17 IST" duration-ms="15035" status="PASS">
+        <test-method signature="identifyNewBikes()[pri:0, instance:tests.IdentifyNewBikesTest@15de0b3c]" started-at="2026-02-17T09:34:58 IST" name="identifyNewBikes" description="Identify upcoming Honda bikes under 4 Lakh and capture screenshot" finished-at="2026-02-17T09:35:05 IST" duration-ms="7554" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- identifyNewBikes -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.IdentifyNewBikesTest@682b2fa]" started-at="2026-02-12T12:30:17 IST" name="tearDown" finished-at="2026-02-12T12:30:23 IST" duration-ms="5885" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.IdentifyNewBikesTest@15de0b3c]" started-at="2026-02-17T09:35:05 IST" name="tearDown" finished-at="2026-02-17T09:35:10 IST" duration-ms="4776" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

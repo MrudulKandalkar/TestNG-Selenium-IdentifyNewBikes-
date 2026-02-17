@@ -50,6 +50,17 @@ public class ExtentTestNGListener implements ITestListener {
 
     @Override
     public synchronized void onTestSuccess(ITestResult result) {
+    	
+    	WebDriver driver = DriverFactory.getDriver();
+        String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+        try {
+            File screenshot = new File(System.getProperty("user.dir") + File.separator + "screenshots" + File.separator + result.getMethod().getMethodName() + "_pass_"+timestamp+".png");
+            ScreenshotUtil.savePageScreenshot(driver, screenshot);
+            test.get().addScreenCaptureFromPath(screenshot.getAbsolutePath());
+        } catch (Exception ignored) {}
+
+    	
+    	
         test.get().pass("Test passed");
     }
 
@@ -57,8 +68,9 @@ public class ExtentTestNGListener implements ITestListener {
     public synchronized void onTestFailure(ITestResult result) {
         test.get().fail(result.getThrowable());
         WebDriver driver = DriverFactory.getDriver();
+        String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         try {
-            File screenshot = new File(System.getProperty("user.dir") + File.separator + "screenshots" + File.separator + result.getMethod().getMethodName() + "_failed.png");
+            File screenshot = new File(System.getProperty("user.dir") + File.separator + "screenshots" + File.separator + result.getMethod().getMethodName() + "_failed_"+timestamp+".png");
             ScreenshotUtil.savePageScreenshot(driver, screenshot);
             test.get().addScreenCaptureFromPath(screenshot.getAbsolutePath());
         } catch (Exception ignored) {}
